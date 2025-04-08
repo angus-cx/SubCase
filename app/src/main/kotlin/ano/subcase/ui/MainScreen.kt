@@ -15,11 +15,9 @@ import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
 import ano.subcase.CaseStatus
 import ano.subcase.R
@@ -148,15 +146,6 @@ fun UpdateDialog() {
                 }
             }
         },
-    )
-}
-
-@Preview
-@Composable
-fun CaseWebView() {
-    AndroidView(
-        modifier = Modifier.fillMaxSize(),
-        factory = { CaseStatus.webView }
     )
 }
 

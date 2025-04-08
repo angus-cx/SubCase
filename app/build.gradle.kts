@@ -101,9 +101,11 @@ dependencies {
 
     implementation(libs.timber)
 
-    //com.google.accompanist:accompanist-systemuicontroller
     implementation(libs.accompanist.systemuicontroller)
 
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation ("com.google.android.material:material:1.9.0")
+    implementation("com.google.accompanist:accompanist-webview:0.36.0")
+    implementation(libs.androidx.webkit)
+    implementation(libs.okhttp)
     implementation("com.caoccao.javet:javet-node-android:4.1.1")
 }
